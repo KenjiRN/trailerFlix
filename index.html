@@ -5,123 +5,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NewFlix</title>
-<style>
-    body {
-  font-family: 'New Tegomin', serif;
-  text-align:center;
-  background-image: url('https://wallpapercave.com/uwp/uwp871825.jpeg');
-  background-color: #000000;
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-}
+    <style>
+        body {
+          font-family: 'New Tegomin', serif;
+          text-align:center;
+          background-image: url('https://wallpapercave.com/uwp/uwp871825.jpeg');
+          background-color: #000000;
+          background-size: cover;
+          background-position: center top;
+          background-repeat: no-repeat;
+        }
 
-.container {
-  text-align: center;
-  padding: 20px;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  padding-top: 5px;
-}
+        .container {
+          text-align: center;
+          padding: 20px;
+          margin-bottom: 0;
+          padding-bottom: 0;
+          padding-top: 5px;
+        }
 
-.page-title {
-  color: #ffffff;
-  margin: 0 0 5px;
-}
+        .page-title {
+          color: #ffffff;
+          margin: 0 0 5px;
+        }
 
-.page-subtitle {
-  color: #ffffff;
-  margin-top: 5px;
-}
+        .page-subtitle {
+          color: #ffffff;
+          margin-top: 5px;
+        }
 
-.page-logo {
-  width: 200px;
-}
+        .page-logo {
+          width: 200px;
+        }
 
-.alura-logo {
-  width: 40px;
-  position: absolute;
-  top: 10px;
-  right:10px;
-}
+        .alura-logo {
+          width: 40px;
+          position: absolute;
+          top: 10px;
+          right:10px;
+        }
 
-#listaFilmes img {
-  margin: 10px;
-  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.71); 
-  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.71);
-}
+        #listaFilmes img {
+          margin: 10px;
+          -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.71); 
+          box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.71);
+        }
 
-#listaFilmes img:hover {
-  -ms-transform: scale(1.2); /* IE 9 */
-  -webkit-transform: scale(1.2); /* Safari 3-8 */
-  transform: scale(1.2); 
+        #listaFilmes img:hover {
+          -ms-transform: scale(1.2); /* IE 9 */
+          -webkit-transform: scale(1.2); /* Safari 3-8 */
+          transform: scale(1.2); 
 
-  border: 2px double rgb(0, 215, 230);
+          border: 2px double rgb(0, 215, 230);
 
 
-}
+        }
 
-.form-wrapper {
-  margin: 0 0 15px;
-  
-}
+        .form-wrapper {
+          margin: 0 0 15px;
 
-.form-wrapper input {
-  display: block;
-  margin: 0 auto;
-  padding: 10px 15px;
-  border: 2px solid rgb(0, 217, 255);
-  border-radius: 4px;
+        }
 
-  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.71); 
-  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.71);
-}
+        .form-wrapper input {
+          display: block;
+          margin: 0 auto;
+          padding: 10px 15px;
+          border: 2px solid rgb(0, 217, 255);
+          border-radius: 4px;
 
-.form-wrapper button {
-  border: 0;
-  color: #ffffff;
-  background-image: linear-gradient(to left, rgb(5, 148, 153), rgb(2, 34, 75));
-  font-weight:bold;
-  padding: 15px 20px;
-  font-size: 16px;
-  border-radius: 4px;
-  margin-top: 20px;
-  cursor: pointer;
-  transition: .3s;
+          -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.71); 
+          box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.71);
+        }
 
-  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.71); 
-  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.71);
-}
+        .form-wrapper button {
+          border: 0;
+          color: #ffffff;
+          background-image: linear-gradient(to left, rgb(5, 148, 153), rgb(2, 34, 75));
+          font-weight:bold;
+          padding: 15px 20px;
+          font-size: 16px;
+          border-radius: 4px;
+          margin-top: 20px;
+          cursor: pointer;
+          transition: .3s;
 
-.form-wrapper button:hover {
-  opacity:.8;
-}
+          -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.71); 
+          box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.71);
+        }
 
-#yt {
+        .form-wrapper button:hover {
+          opacity:.8;
+        }
 
-  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.71); 
-  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.71);
-  
-  border-radius: 6px;
-  background-image: linear-gradient(to right, rgb(1, 89, 92), rgb(2, 41, 100));
-  border: 0;
-}
+        #yt {
 
-#resultado {
-  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.71); 
-  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.71);
-  background-image: radial-gradient(rgb(105, 105, 105), rgb(49, 49, 49));
-  color: rgb(255, 255, 255);
-  font-weight:bold;
+          -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.71); 
+          box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.71);
 
-  
-}
+          border-radius: 6px;
+          background-image: linear-gradient(to right, rgb(1, 89, 92), rgb(2, 41, 100));
+          border: 0;
+        }
 
-.git-logo {
-    width: 60px;
+        #resultado {
+          -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.71); 
+          box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.71);
+          background-image: radial-gradient(rgb(105, 105, 105), rgb(49, 49, 49));
+          color: rgb(255, 255, 255);
+          font-weight:bold;
 
-}
-.hahaha{
+
+        }
+
+        .git-logo {
+            width: 60px;
+
+        }
+        .hahaha{
 
             color: #3f3;
             animation-duration: 8s;
